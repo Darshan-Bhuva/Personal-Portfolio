@@ -14,6 +14,7 @@
   border: 1px solid white;
   border-radius: 100%;
   pointer-events: none;
+  z-index: 99;
 }
 
 .customeCursor.hover{
@@ -59,8 +60,8 @@
   width: 5vw;
   height: 100vh;
   background-color: black;
-  
-    
+  position: relative;
+      
 }
 .left-navigation .menuItem{
   display: flex;
