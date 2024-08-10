@@ -2,10 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none;
+}
+
+.customeCursor{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.341);
+  transform: translateX(-50%) translateY(-50%);
+  border: 1px solid white;
+  border-radius: 100%;
+  pointer-events: none;
+}
+
+.customeCursor.hover{
+  width: 1000vw;
+  height: 2000vh;
+  transition: 1.22s  ease-in-out;
+  background:none;
+  border: 5px solid white;
 }
 
 .sections{
-  width: 90vw;
+  width: 95vw;
   height: 90vh;
 }
 
@@ -16,12 +36,17 @@
 }
 
 .bottom-navigation{
-  width: 90vw;
+  width: 95vw;
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: black;
+  font-size: 20px;
+}
+
+.menuItemContainer{
+  overflow: hidden;
 }
 
 .navigation a{
@@ -31,24 +56,85 @@
   
 }
 .left-navigation{
-  width: 10vw;
+  width: 5vw;
   height: 100vh;
   background-color: black;
+  
+    
+}
+.left-navigation .menuItem{
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
     align-items: center;
-    
-}
-
-.left-navigation a{
+    transition: 1s all ease-in-out;
+    overflow: hidden;
+    transition: transform 0.8s;
+  }
+  
+  .left-navigation a{
   writing-mode: vertical-rl;
   padding:20px 0px;
   text-orientation: mixed;
+  font-size: 20px;
 }
 
 .left-navigation a span{
   display: inline-block;
+  padding-top: 4px;
   transform: rotate(-90deg);
   letter-spacing: 12px;
+  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+
+/* Keyframes for bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-100%);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(15%);
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0%);
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: translateY(0%);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    transform: translateY(-10%);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: translateY(15%);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(-100%);
+    animation-timing-function: ease-out;
+  }
+}
+
+/* Apply the bounce animation to the menu item container */
+
+.menuItem.bouncy {
+  animation: bounceIn 0.8s forwards;
+}
+
+.menuItem.bouncy-out {
+  animation: bounceOut 0.8s forwards;
 }

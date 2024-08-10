@@ -1,9 +1,9 @@
 import React from 'react'
+import '../css/contact.css'
 
 const ContactPage = () => {
   return (
     <div className='contact sections'>
-      ContactPage
     </div>
   )
 }
