@@ -8,25 +8,25 @@ const AboutPage = () => {
   const bioCard2 = useRef(null);
 
   useEffect(() => {
-    if (bioCard1.current) {
-      VanillaTilt.init(bioCard1.current, {
-        max: 25,
-        speed: 400,
-        glare: true,
-        perspective: 1000,
-        'max-glare': 0.2,
-      });
-    }
+    // if (bioCard1.current) {
+    //   VanillaTilt.init(bioCard1.current, {
+    //     max: 15,
+    //     speed: 400,
+    //     glare: true,
+    //     perspective: 1000,
+    //     'max-glare': 0.2,
+    //   });
+    // }
 
-    if (bioCard2.current) {
-      VanillaTilt.init(bioCard2.current, {
-        max: 25,
-        speed: 400,
-        glare: true,
-        perspective: 1000,
-        'max-glare': 0.2,
-      });
-    }
+    // if (bioCard2.current) {
+    //   VanillaTilt.init(bioCard2.current, {
+    //     max: 25,
+    //     speed: 400,
+    //     glare: true,
+    //     perspective: 1000,
+    //     'max-glare': 0.2,
+    //   });
+    // }
     const $window = $(window);
     const $body = $('body');
 
@@ -339,7 +339,6 @@ const AboutPage = () => {
 
         </section>
         <div>
-
           <svg xmlns="http://www.w3.org/2000/svg">
             <symbol viewBox="0 0 18 18" id="arrow-next">
               <path id="arrow-next-arrow.svg" d="M12.6,9L4,17.3L4.7,18l8.5-8.3l0,0L14,9l0,0l-0.7-0.7l0,0L4.7,0L4,0.7L12.6,9z" />
