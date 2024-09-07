@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import VanillaTilt from 'vanilla-tilt';
+// import {View, Image, StyleSheet} from 'react-native';
 import '../css/homepage.css';
 
 const HomePage = () => {
@@ -20,6 +21,7 @@ const HomePage = () => {
 
   return (
     <div className='homepage sections'>
+      {/* <Image ></Image> */}
       <div className="introContainer" ref={tiltRef}>
         <p>Darshan Bhuva</p>
         <p>Crafting the digital future,<br /> one revolutionary line <br />of code at a time</p>

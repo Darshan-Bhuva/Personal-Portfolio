@@ -1,0 +1,20 @@
+.technologyContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* flex-direction: column; */
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.technologyContainer li{
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.technologyContainer li img{
+    padding-right: 20px;
+}
+
+.technologyContainer li img:hover .customeCursor{
+    width: 100px;
+    height: 100px;
+}

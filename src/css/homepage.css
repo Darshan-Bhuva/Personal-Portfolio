@@ -1,5 +1,7 @@
 .homepage{
     background-image: url('../assets/start/start.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
     background-color: black;
     position: relative;
     color: white;

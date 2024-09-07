@@ -1,4 +1,7 @@
 .contact{
     background: url('../assets/join/join.png');
     background-color: black;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
 }
