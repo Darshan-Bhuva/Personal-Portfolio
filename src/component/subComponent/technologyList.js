@@ -9,7 +9,7 @@ import github from '../../assets/bio/technnology/github.png'
 import figma from '../../assets/bio/technnology/figma.png'
 import firebase from '../../assets/bio/technnology/firebase.png'
 import js from '../../assets/bio/technnology/js.png'
-import 'D:/Personal Project/Portfolio/portfolio/src/component/subComponent/technology.css'
+import '../subComponent/technology.css'
 import React, { useEffect } from 'react'
 
 
